@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#00AFC3">
+		<meta name="theme-color" content="#00AFC3">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+							<div>
+								<img src="images/logo_name.svg" alt="">
+								<div class="desc">Доставка грузов из Китая</div>
+							</div>
+						</a>
+
+						<nav class="menu row">
+							<div class="item">
+								<a href="/">Главная</a>
+							</div>
+
+							<div class="item">
+								<a href="/" class="sub_link">
+									<span>Услуги</span>
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+								</a>
+
+								<div class="sub_menu">
+									<div class="cont">
+										<div class="row">
+											<div class="links columns">
+												<div><a href="/">
+													Доставка грузов из Китая<br> под ключ <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+
+												<div><a href="/">
+													Ж/д перевозки грузов<br> из Китая <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+
+												<div><a href="/">
+													Калькуятор расчета стоимости <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+
+												<div><a href="/">
+													Дополнительные услуги <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+
+												<div><a href="/">
+													Таможенное оформление <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+											</div>
+
+											<div class="links">
+												<div><a href="/">
+													Контейнерные перевозки <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+
+												<div><a href="/">
+													Крупногабаритные грузы <svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_right"></use></svg>
+												</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<a href="/">О компании</a>
+							</div>
+
+							<div class="item">
+								<a href="/">Блог</a>
+							</div>
+
+							<div class="item">
+								<a class="active">Контакты</a>
+							</div>
+						</nav>
+
+						<div class="email">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+							<a href="mailto:info@avmlogistic.ru">info@avmlogistic.ru</a>
+						</div>
+
+						<div class="phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							<a href="tel:+7 965 258 8595">+7 965 258 8595</a>
+						</div>
+
+						<div class="langs modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#langs_modal">
+								<img src="images/tmp/flag_ru.png" alt="">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="langs_modal">
+								<button><img src="images/tmp/flag_ch.png" alt=""></button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+							<div>
+								<img src="images/logo_name.svg" alt="">
+								<div class="desc">Доставка грузов из Китая</div>
+							</div>
+						</a>
+
+						<div class="contacts">
+							<div class="phone">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<a href="tel:+74951288508">+7 (495) 128 85 08</a>
+							</div>
+
+							<div class="time">пн. - пт. с 9:00 - до 18:00</div>
+						</div>
+
+						<div class="mob_menu">
+							<div class="menu">
+								<div><a href="/">Главная</a></div>
+
+								<div>
+									<a href="#" class="sub_link">Услуги</a>
+
+									<div class="sub_menu">
+										<div class="cols">
+											<div class="col">
+												<div><a href="/">Доставка грузов из Китая под ключ</a></div>
+												<div><a href="/">Ж/д перевозки грузов из Китая</a></div>
+												<div><a href="/">Калькуятор расчета стоимости</a></div>
+												<div><a href="/">Дополнительные услуги</a></div>
+												<div><a href="/">Таможенное оформление</a></div>
+											</div>
+
+											<div class="col">
+												<div><a href="/">Контейнерные перевозки</a></div>
+												<div><a href="/">Крупногабаритные грузы</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div><a href="/">О компании</a></div>
+								<div><a href="/">Блог</a></div>
+								<div><a href="/">Контакты</a></div>
+							</div>
+
+							<div class="langs">
+								<button><img src="images/tmp/flag_ru.png" alt=""></button>
+								<button><img src="images/tmp/flag_ch.png" alt=""></button>
+							</div>
+
+							<div class="contacts">
+								<div class="items">
+									<div class="item">
+										<div class="email">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+											<a href="mailto:info@avmlogistic.ru">info@avmlogistic.ru</a>
+										</div>
+
+										<div class="exp">По любым вопросам</div>
+									</div>
+
+									<div class="item">
+										<div class="phone">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+											<a href="tel:+79652588595">+7 965 258 8595</a>
+
+											<div class="messengers">
+												<a href="/" target="_blank" rel="noopener nofollow">
+													<img src="images/ic_whatsapp.svg" alt="">
+												</a>
+
+												<a href="/" target="_blank" rel="noopener nofollow">
+													<img src="images/ic_telegram.svg" alt="">
+												</a>
+											</div>
+										</div>
+
+										<div class="time">В любое время</div>
+									</div>
+
+									<div class="item location">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>г. Москва,<br> проспект Андропова 22</span>
+									</div>
+
+									<div class="item">
+										<div class="phone">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+											<a href="tel:+74951288508">+7 (495) 128 85 08</a>
+										</div>
+
+										<div class="time">пн. - пт. с 9:00 - до 18:00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep"></span>
+							<span class="current">Контакты</span>
+						</div>
+
+						<h1 class="page_title">Контакты</h1>
+					</div>
+				</section>
+
+
+				<section class="contacts_info">
+					<div class="cont">
+						<div class="company">ООО «АВМ Логистика»</div>
+
+						<div class="row">
+							<div class="col_left">
+								<div class="item">
+									<div class="name">Адрес:</div>
+
+									<div class="location">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+										<span>115533 Россия, Москва, проспект Андропова, дом 22, 17-й этаж, комната  №29, помещение №1</span>
+									</div>
+								</div>
+
+
+								<div class="item">
+									<div class="name">Телефоны:</div>
+
+									<div class="phone">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+										<a href="tel:+74993944865">+7 499 394 48 65</a>
+									</div>
+
+									<div class="phone">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+										<a href="tel:+79652588595">+7 965 258 8595</a>
+									</div>
+								</div>
+
+
+								<div class="item">
+									<div class="name">Email:</div>
+
+									<div class="email">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+										<a href="mailto:info@avmlogistic.ru">info@avmlogistic.ru</a>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col_right">
+								<div class="requisites">
+									<div class="title">Банковские реквизиты:</div>
+
+									<div class="item"><b>Юридический адрес:</b> 115533 Россия, Москва, проспект Андропова, дом 22, 17-й этаж, комната  №29, помещение №1</div>
+
+									<div class="item"><b>Фактический адрес:</b> 115533 Россия, Москва, проспект Андропова, дом 22, 17-й этаж, комната  №29, помещение №1</div>
+
+									<div class="item"><b>Идентификационный номер (ИНН):</b> 7751045350</div>
+
+									<div class="item"><b>КПП:</b> 772501001</div>
+
+									<div class="item"><b>ОГРН:</b> 1177746468349</div>
+
+									<div class="item"><b>ОКПО:</b> 15615931</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img data-src="images/bg_contacts_info.png" alt="" class="bg lozad">
+				</section>
+
+
+				<section class="contacts_map">
+					<div id="map"></div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="logo">
+						<img src="images/logo_white.svg" alt="">
+						<div>
+							<img src="images/logo_name_white.svg" alt="">
+							<div class="desc">Доставка грузов из Китая</div>
+						</div>
+					</div>
+
+
+					<div class="links">
+						<div class="title">Услуги</div>
+
+						<div class="items">
+							<div><a href="/">Доставка грузов из Китая под ключ</a></div>
+							<div><a href="/">Ж/д перевозки грузов из Китая</a></div>
+							<div><a href="/">Таможенное оформление</a></div>
+							<div><a href="/">Калькулятор расчета стоимости</a></div>
+						</div>
+					</div>
+
+
+					<div class="links">
+						<div class="title">Блог</div>
+
+						<div class="items">
+							<div><a href="/">Растаможка товаров из Китая</a></div>
+							<div><a href="/">Таможенная очистка</a></div>
+							<div><a href="/">ТО импортных грузов</a></div>
+							<div><a href="/">Импорт 40</a></div>
+						</div>
+					</div>
+
+
+					<div class="links">
+						<div class="title">О компании</div>
+
+						<div class="items">
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Контакты</a></div>
+						</div>
+					</div>
+
+
+					<div class="contacts">
+						<div class="phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							<a href="tel:+79652588595">+7 965 258 8595</a>
+
+							<div class="time">пн. - пт. с 9:00 - до 18:00</div>
+						</div>
+
+						<div class="email">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+							<a href="mailto:info@avmlogistic.ru">info@avmlogistic.ru</a>
+
+							<div class="exp">По любым вопросам</div>
+						</div>
+
+						<div class="location">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+							<span>г. Москва,<br> проспект Андропова 22</span>
+						</div>
+					</div>
+
+
+					<div class="hr"></div>
+
+
+					<div class="bottom">
+						<div class="copyright">&copy; 2021. АВМ Логистика. Все права защищены</div>
+
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,761 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 27px;
+    }
+
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cont
+    {
+        padding: 0 60px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 72px;
+    }
+
+
+
+    /*-------------------
+        Mob. all link
+    -------------------*/
+    .mob_all_link
+    {
+        display: block;
+    }
+
+
+
+    /*--------------
+        BG block
+    --------------*/
+    .bg_block
+    {
+        padding: 72px 0;
+    }
+
+
+    .bg_block .about_text,
+    .bg_block .clients
+    {
+        margin-top: 60px;
+    }
+
+    .bg_block .clients .row > *
+    {
+        width: calc(25% - 12px);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding-bottom: 40px;
+    }
+
+
+    .mob_header.border
+    {
+        padding-bottom: 32px;
+    }
+
+    .mob_header.border:after
+    {
+        width: calc(100% - 120px);
+    }
+
+
+    .mob_header .contacts + .contacts
+    {
+        display: none;
+    }
+
+
+
+    .mob_header .mob_menu
+    {
+        left: 44px;
+
+        width: 248px;
+    }
+
+    .mob_header .mob_menu .menu
+    {
+        padding-left: 25px;
+    }
+
+    .mob_header .mob_menu .menu > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .mob_header .mob_menu .menu .sub_menu
+    {
+        width: calc(100% - 248px);
+        height: calc(100% - 162px);
+    }
+
+    .mob_header .mob_menu .menu .sub_menu .col
+    {
+        padding: 60px 25px 25px;
+    }
+
+    .mob_header .mob_menu .menu .sub_menu .col > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .mob_header .mob_menu .langs
+    {
+        margin-top: 32px;
+        padding-left: 25px;
+    }
+
+
+    .mob_header .mob_menu .contacts
+    {
+        padding-left: 25px;
+    }
+
+
+    .mob_header .mob_menu.big
+    {
+        max-width: calc(100% - 88px);
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_desc
+    {
+        width: 340px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .block_head .all_link
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .gallery
+    {
+        margin-top: 52px;
+        margin-bottom: 52px;
+    }
+
+    .text_block .gallery .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .text_block .gallery .row > *
+    {
+        width: calc(33.333% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 25px;
+        line-height: 33px;
+
+        padding: 40px 0;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        display: flex;
+
+        padding: 190px 0 182px;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex: 1 0 auto;
+    }
+
+
+    .error_page .mob_bg
+    {
+        width: 92px;
+    }
+
+    .error_page .mob_bg2
+    {
+        width: 300px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+    .articles .row > *.big
+    {
+        width: calc(100% - 20px);
+    }
+
+    .articles .row > *.tablet_hide
+    {
+        display: block;
+    }
+
+
+    .articles .article.big .info
+    {
+        padding: 24px 28px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .data
+    {
+        width: 336px;
+    }
+
+
+    .action_form .img
+    {
+        width: 444px;
+        margin-right: 20px;
+    }
+
+
+    .action_form .img2
+    {
+        top: 0;
+        bottom: 0;
+
+        width: 660px;
+        margin: auto -24px;
+    }
+
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-top: 12px;
+        padding-bottom: 45px;
+    }
+
+
+    .contacts_info .company
+    {
+        font-size: 18px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .contacts_info .col_left
+    {
+        width: 100%;
+    }
+
+    .contacts_info .col_right
+    {
+        width: 100%;
+        margin-top: 58px;
+    }
+
+    .contacts_info .col_left > * + *,
+    .contacts_info .col_right > * + *
+    {
+        margin-top: 29px;
+    }
+
+
+    .contacts_info .item .name
+    {
+        display: none;
+    }
+
+
+    .contacts_info .requisites .title,
+    .contacts_info .requisites .item
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    .contacts_info .bg
+    {
+        width: 340px;
+        max-width: 75%;
+    }
+
+
+    /*------------------
+        Contacts map
+    ------------------*/
+    .contacts_map
+    {
+        height: 464px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        margin-bottom: 92px;
+    }
+
+
+    .services .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .services .service .thumb
+    {
+        min-height: 240px;
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        height: 640px;
+    }
+
+
+    .about_head .image
+    {
+        width: 400px;
+        margin-left: 0;
+    }
+
+
+    .about_head .bg2
+    {
+        width: 400px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .clients .row > *
+    {
+        width: calc(25% - 12px);
+    }
+
+
+
+    /*-----------
+        Certs
+    -----------*/
+    .certs
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .reviews .block_head .desc
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    .reviews .review
+    {
+        display: flex;
+
+        padding: 36px;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .reviews .review .photo
+    {
+        width: 141px;
+        height: 141px;
+        margin: 0;
+    }
+
+    .reviews .review .info
+    {
+        width: calc(100% - 185px);
+
+        align-self: center;
+    }
+
+    .reviews .review .text
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .reviews .bg2
+    {
+        width: 320px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .article_content .bg
+    {
+        width: 320px;
+    }
+
+
+    .article_info .text_block
+    {
+        padding-bottom: 52px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 212px 0 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+    }
+
+    .first_section .data .company
+    {
+        display: none;
+    }
+
+    .first_section .data .title
+    {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+
+    .first_section .bg2
+    {
+        position: relative;
+        right: 0;
+
+        width: 90%;
+        margin-top: -72px;
+        margin-left: auto;
+    }
+
+
+
+    /*--------------------
+        About services
+    --------------------*/
+    .about_services .image
+    {
+        margin: 0 auto 36px;
+    }
+
+
+    .about_services .info
+    {
+        width: 100%;
+    }
+
+
+    .about_services .swiper-container
+    {
+        overflow: visible !important;
+    }
+
+    .about_services .swiper-button-next,
+    .about_services .swiper-button-prev
+    {
+        display: block;
+    }
+
+
+    .about_services .tabs
+    {
+        display: none;
+    }
+
+    .about_services .tab_content
+    {
+        visibility: visible;
+        overflow: visible;
+
+        height: auto;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .block_head .desc
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block
+    {
+        padding: 72px 0 12px;
+    }
+
+
+    .about_block .img
+    {
+        position: relative;
+        right: 0;
+
+        display: block;
+
+        width: 640px;
+        min-width: 0;
+        margin-right: -15%;
+    }
+
+
+    .about_block .bg
+    {
+        width: 480px;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        overflow: visible;
+
+        margin-bottom: 312px;
+        padding: 172px 0;
+    }
+
+
+    .service_head .service_title
+    {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .service_head .desc
+    {
+        font-size: 14px;
+        line-height: 24px;
+
+        width: 380px;
+    }
+
+
+    .service_head .bg2
+    {
+        right: -25%;
+
+        width: 90%;
+    }
+
+
+    .service_head .features
+    {
+        position: absolute;
+        top: 100%;
+
+        width: calc(100% - 120px);
+        margin-top: 24px;
+    }
+
+    .service_head .features .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*--------------------
+        Service prices
+    --------------------*/
+    .service_prices .table_wrap
+    {
+        width: calc(100% + 120px);
+        max-width: calc(100% + 120px);
+        margin-right: -60px;
+        margin-left: -60px;
+        padding: 0 60px;
+    }
+
+
+    .service_prices table th
+    {
+        white-space: nowrap;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts
+    {
+        width: 100%;
+        margin-top: 32px;
+
+        justify-content: space-between;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .modal_desc
+    {
+        font-size: 15px;
+        line-height: 25px;
+
+        margin-top: 12px;
+    }
+}
