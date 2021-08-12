@@ -19,31 +19,6 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
-	// Кнопка 'Вверх'
-	$('.buttonUp button').click((e) => {
-		e.preventDefault()
-
-		$('body, html').stop(false, false).animate({ scrollTop: 0 }, 1000)
-	})
-
-
-	// Маска ввода
-	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
-	// Кастомный select
-	$('select').niceSelect()
-
-	// Фокус при клике на название поля
-	$('body').on('click', '.form .label', function () {
-		$(this).closest('.line').find('.input, textarea').focus()
-	})
-
-	// Выбор файла
-	$('body').on('change', '.form input[type=file]', function (e) {
-		$(this).closest('.file').find('label').text($(this).val())
-	})
-
-
 	// Мини всплывающие окна
 	$('.mini_modal_btn').click(function (e) {
 		e.preventDefault()
@@ -219,15 +194,6 @@ $(() => {
 			}
 		})
 	}
-})
-
-
-
-$(window).scroll(() => {
-	// Кнопка 'Вверх'
-	$(window).scrollTop() > $(window).innerHeight()
-		? $('.buttonUp').fadeIn(300)
-		: $('.buttonUp').fadeOut(200)
 })
 
 

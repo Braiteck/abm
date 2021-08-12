@@ -29,7 +29,6 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/swiper.css">
-		<link rel="stylesheet" href="css/ion.rangeSlider.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
@@ -47,10 +46,7 @@
 					<div class="cont row">
 						<a href="/" class="logo">
 							<img src="images/logo.svg" alt="">
-							<div>
-								<img src="images/logo_name.svg" alt="">
-								<div class="desc">Доставка грузов из Китая</div>
-							</div>
+							<img src="images/logo_name.svg" alt="">
 						</a>
 
 						<nav class="menu row">
@@ -148,10 +144,7 @@
 
 						<a href="/" class="logo">
 							<img src="images/logo.svg" alt="">
-							<div>
-								<img src="images/logo_name.svg" alt="">
-								<div class="desc">Доставка грузов из Китая</div>
-							</div>
+							<img src="images/logo_name.svg" alt="">
 						</a>
 
 						<div class="contacts">
@@ -269,26 +262,86 @@
 
 									<div class="columns row">
 										<div class="line width1of4">
+											<div class="label">Выбор типа контейнера:</div>
+
 											<div class="field">
-												<input type="hidden" id="width_range" name="width_range" value="">
+												<input type="radio" name="group1" id="group1_check1" checked>
+												<label for="group1_check1">20 DC</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group1" id="group1_check2">
+												<label for="group1_check2">40 DC</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group1" id="group1_check3">
+												<label for="group1_check3">40 HQ</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group1" id="group1_check4">
+												<label for="group1_check4">Другой</label>
 											</div>
 										</div>
 
+
 										<div class="line width1of4">
+											<div class="label">Что для вас САМОЕ важное:</div>
+
 											<div class="field">
-												<input type="hidden" id="length_range" name="length_range" value="">
+												<input type="radio" name="group2" id="group2_check1" checked>
+												<label for="group2_check1">Цена</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group2" id="group2_check2">
+												<label for="group2_check2">Скорость</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group2" id="group2_check3">
+												<label for="group2_check3">Точность даты выхода</label>
 											</div>
 										</div>
 
+
 										<div class="line width1of4">
+											<div class="label">Что для вас ВТОРОЕ важное:</div>
+
 											<div class="field">
-												<input type="hidden" id="height_range" name="height_range" value="">
+												<input type="radio" name="group3" id="group3_check1" checked>
+												<label for="group3_check1">Цена</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group3" id="group3_check2">
+												<label for="group3_check2">Скорость</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group3" id="group3_check3">
+												<label for="group3_check3">Точность даты выхода</label>
 											</div>
 										</div>
 
+
 										<div class="line width1of4">
+											<div class="label">Масса:</div>
+
 											<div class="field">
-												<input type="hidden" id="weight_range" name="weight_range" value="">
+												<input type="radio" name="group4" id="group4_check1" checked>
+												<label for="group4_check1">< 21 тон</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group4" id="group4_check2">
+												<label for="group4_check2">< 24 тон</label>
+											</div>
+
+											<div class="field">
+												<input type="radio" name="group4" id="group4_check3">
+												<label for="group4_check3">< 27 тон</label>
 											</div>
 										</div>
 									</div>
@@ -302,28 +355,13 @@
 										<div class="col">
 											<div class="line">
 												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="Адрес загрузки">
+													<input type="text" name="" value="" class="input" placeholder="Город загрузки в Китае">
 												</div>
 											</div>
 
 											<div class="line">
 												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="Адрес разгрузки">
-												</div>
-											</div>
-										</div>
-
-
-										<div class="col">
-											<div class="line">
-												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="Наименование груза">
-												</div>
-											</div>
-
-											<div class="line">
-												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="ФИО или организация">
+													<input type="text" name="" value="" class="input" placeholder="Город разгрузки в России">
 												</div>
 											</div>
 										</div>
@@ -332,13 +370,22 @@
 										<div class="col">
 											<div class="line">
 												<div class="field">
-													<input type="tel" name="" value="" class="input" placeholder="Номер телефона">
+													<input type="text" name="" value="" class="input" placeholder="Адрес доставки (если требуется)">
 												</div>
 											</div>
 
 											<div class="line">
 												<div class="field">
-													<input type="text" name="" value="" class="input" placeholder="Описание груза">
+													<input type="text" name="" value="" class="input" placeholder="Номер телефона или почта">
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col">
+											<div class="line">
+												<div class="field">
+													<textarea name="" placeholder="Комментарий"></textarea>
 												</div>
 											</div>
 										</div>
@@ -372,10 +419,7 @@
 				<div class="cont row">
 					<div class="logo">
 						<img src="images/logo_white.svg" alt="">
-						<div>
-							<img src="images/logo_name_white.svg" alt="">
-							<div class="desc">Доставка грузов из Китая</div>
-						</div>
+						<img src="images/logo_name_white.svg" alt="">
 					</div>
 
 
@@ -387,18 +431,6 @@
 							<div><a href="/">Ж/д перевозки грузов из Китая</a></div>
 							<div><a href="/">Таможенное оформление</a></div>
 							<div><a href="/">Калькулятор расчета стоимости</a></div>
-						</div>
-					</div>
-
-
-					<div class="links">
-						<div class="title">Блог</div>
-
-						<div class="items">
-							<div><a href="/">Растаможка товаров из Китая</a></div>
-							<div><a href="/">Таможенная очистка</a></div>
-							<div><a href="/">ТО импортных грузов</a></div>
-							<div><a href="/">Импорт 40</a></div>
 						</div>
 					</div>
 
@@ -416,9 +448,28 @@
 					<div class="contacts">
 						<div class="phone">
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
-							<a href="tel:+79652588595">+7 965 258 8595</a>
+							<a href="tel:+74951288508">+7 (495) 128 85 08</a>
 
 							<div class="time">пн. - пт. с 9:00 - до 18:00</div>
+						</div>
+
+						<div class="phone">
+							<div class="row">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<a href="tel:+79652588595">+7 965 258 8595</a>
+
+								<div class="messengers">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_whatsapp.svg" alt="">
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_telegram.svg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="time">В любое время</div>
 						</div>
 
 						<div class="email">
@@ -432,6 +483,12 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
 							<span>г. Москва,<br> проспект Андропова 22</span>
 						</div>
+					</div>
+
+
+					<div class="qr_code">
+						<img src="images/qr_code.jpg" alt="">
+						<div>Наши контакты</div>
 					</div>
 
 
@@ -462,9 +519,6 @@
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="js/inputmask.min.js"></script>
-		<script src="js/nice-select.js"></script>
-		<script src="js/ion.rangeSlider.min.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

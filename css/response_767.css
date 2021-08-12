@@ -63,24 +63,15 @@
     /*-----------------
         Mob. header
     -----------------*/
-    .mob_header,
-    .mob_header.border
+    .mob_header
     {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .mob_header.border:after
-    {
-        display: none;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
 
     .mob_header .logo
     {
-        font-size: 10px;
-        line-height: 14px;
-
         position: relative;
         z-index: 10;
 
@@ -90,17 +81,13 @@
 
     .mob_header .logo > img
     {
-        width: 30px;
+        width: 32px;
     }
 
-    .mob_header .logo > img + div
+    .mob_header .logo > img + img
     {
+        width: 120px;
         margin-left: 10px;
-    }
-
-    .mob_header .logo > div img
-    {
-        width: 125px;
     }
 
 
@@ -421,7 +408,7 @@
     ---------------*/
     .calc_page
     {
-        padding: 107px 0 68px;
+        padding: 92px 0 68px;
     }
 
 
@@ -594,8 +581,9 @@
     -------------------*/
     .first_section
     {
-        padding: 116px 0 0;
+        padding: 52px 0;
     }
+
 
     .first_section .data .title
     {
@@ -604,9 +592,9 @@
     }
 
 
-    .first_section .bg2
+    .first_section .bg
     {
-        margin-top: -48px;
+        max-width: 64%;
     }
 
 
@@ -739,7 +727,13 @@
         max-width: calc(100% + 48px);
         margin-right: -24px;
         margin-left: -24px;
-        padding: 0 24px;
+    }
+
+
+    .service_prices table td
+    {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
 
@@ -749,7 +743,7 @@
     ------------*/
     footer
     {
-        padding: 70px 0 83px;
+        padding: 64px 0;
     }
 
 
@@ -763,7 +757,8 @@
     footer .contacts,
     footer .links,
     footer .hr,
-    footer .privacy_policy_link
+    footer .privacy_policy_link,
+    footer .qr_code
     {
         display: none;
     }

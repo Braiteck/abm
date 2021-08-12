@@ -176,12 +176,21 @@
     }
 
 
+    .form .label
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
     .form input[type=checkbox] + label
     {
         font-size: 12px;
         line-height: 16px;
 
-        min-height: 24px;
+        height: 24px;
         padding-left: 36px;
     }
 
@@ -195,6 +204,37 @@
     {
         top: 5px;
         left: 5px;
+    }
+
+
+    .form input[type=radio] + label
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        height: 24px;
+        padding-left: 36px;
+    }
+
+    .form input[type=radio] + label:before
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+    .form input[type=radio] + label:after
+    {
+        top: 5px;
+        left: 5px;
+
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .form .field + .field
+    {
+        margin-top: 8px;
     }
 
 
@@ -218,7 +258,7 @@
 
     .form .cols .col:last-child > *
     {
-        width: calc(50% - 10px);
+        width: 100%;
     }
 
 
@@ -732,12 +772,6 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section
-    {
-        padding: 240px 0 104px;
-    }
-
-
     .first_section .data
     {
         width: 396px;
@@ -750,11 +784,9 @@
     }
 
 
-    .first_section .bg2
+    .first_section .bg
     {
-        right: -15%;
-
-        width: 70%;
+        max-width: 50%;
     }
 
 
@@ -827,9 +859,28 @@
     }
 
 
+    .steps .row
+    {
+        margin-bottom: -48px;
+        margin-left: -32px;
+    }
+
     .steps .row > *
     {
-        width: calc(33.333% - 20px);
+        width: calc(33.333% - 32px);
+        margin-bottom: 48px;
+        margin-left: 32px;
+    }
+
+    .steps .row > *:nth-child(even)
+    {
+        margin-top: 0;
+    }
+
+
+    .steps .item .thumb:after
+    {
+        display: none;
     }
 
 
@@ -928,8 +979,14 @@
         font-size: 18px;
         line-height: 24px;
 
-        padding: 16px 24px;
+        padding: 16px 0 16px 24px;
     }
+
+    .service_prices table th:last-child
+    {
+        padding-right: 24px;
+    }
+
 
     .service_prices table td
     {
@@ -937,7 +994,25 @@
         line-height: 24px;
 
         min-width: 0;
-        padding: 24px;
+        padding: 24px 0 24px 24px;
+    }
+
+    .service_prices table td:last-child
+    {
+        padding-right: 24px;
+    }
+
+
+    .service_prices table td.timing
+    {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .service_prices table td.price
+    {
+        width: 208px;
+        min-width: 208px;
     }
 
 
@@ -949,12 +1024,29 @@
 
 
 
+    /*------------------
+        Service text
+    ------------------*/
+    .service_text .bg
+    {
+        max-width: calc(100vw - 632px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
+    footer .logo
+    {
+        align-self: center;
+    }
+
+
+
     footer .hr
     {
-        display: block;
+        display: none;
     }
 
 
@@ -963,18 +1055,25 @@
     {
         display: flex;
 
-        justify-content: flex-start;
+        width: 100%;
+        padding-top: 8px;
+
+        order: 2;
+        justify-content: space-between;
         align-items: center;
         align-content: center;
         flex-wrap: wrap;
     }
 
+    footer .contacts > *,
+    footer .contacts > * + *
+    {
+        margin-top: 24px;
+    }
+
 
     footer .contacts .email
     {
-        margin-top: 0;
-        margin-right: 40px;
-
         order: 2;
     }
 
@@ -994,9 +1093,6 @@
     {
         font-size: 14px;
         line-height: 24px;
-
-        margin-top: 0;
-        margin-right: 40px;
 
         order: 1;
     }
@@ -1030,9 +1126,34 @@
 
     footer .links
     {
+        display: none;
+
         margin-top: 50px;
 
         order: 3;
+    }
+
+
+    footer .qr_code
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        display: flex;
+
+        align-self: center;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .qr_code img
+    {
+        height: 92px;
+        margin: 0 0 0 20px;
+
+        order: 2;
     }
 
 

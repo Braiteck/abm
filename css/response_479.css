@@ -242,12 +242,6 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section
-    {
-        padding: 107px 0 0;
-    }
-
-
     .first_section .data .title
     {
         font-size: 30px;
@@ -263,9 +257,9 @@
     }
 
 
-    .first_section .bg2
+    .first_section .bg
     {
-        margin-top: -24px;
+        max-width: 70%;
     }
 
 

@@ -113,9 +113,14 @@
     /*------------
         Header
     ------------*/
-    header.no_bg
+    header .logo > img
     {
-        padding-top: 52px;
+        width: 40px;
+    }
+
+    header .logo > img + img
+    {
+        width: 140px;
     }
 
 
@@ -160,8 +165,8 @@
 
     header .bottom
     {
-        margin-top: 24px;
-        padding-top: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     header .bottom .menu .item + .item
@@ -182,6 +187,13 @@
     }
 
 
+    header .phone
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
     header .contacts .exp,
     header .contacts .time
     {
@@ -192,10 +204,11 @@
         margin-top: 4px;
     }
 
-    header .location
+
+
+    header.home .contacts + .contacts
     {
-        font-size: 15px;
-        line-height: 23px;
+        margin-left: 60px;
     }
 
 
@@ -618,7 +631,7 @@
     .first_section
     {
         margin-bottom: 64px;
-        padding: 256px 0 120px;
+        padding: 72px 0;
     }
 
 
@@ -644,19 +657,6 @@
     .first_section .data .form .submit
     {
         padding-top: 16px;
-    }
-
-
-    .first_section .bg
-    {
-        display: none;
-    }
-
-
-    .first_section .bg2
-    {
-        width: 58%;
-        height: auto;
     }
 
 
@@ -741,6 +741,17 @@
         width: calc(20% - 20px);
         margin-bottom: 20px;
         margin-left: 20px;
+    }
+
+
+    .steps .item .thumb:after
+    {
+        left: 100%;
+    }
+
+    .steps .row > *:nth-child(even) .thumb:after
+    {
+        left: calc(100% - 15px);
     }
 
 
@@ -862,7 +873,12 @@
         font-size: 20px;
         line-height: 24px;
 
-        padding: 20px 28px;
+        padding: 20px 0 20px 28px;
+    }
+
+    .service_prices table th:last-child
+    {
+        padding-right: 28px;
     }
 
 
@@ -871,13 +887,25 @@
         font-size: 17px;
         line-height: 25px;
 
-        min-width: 220px;
-        padding: 28px;
+        padding: 28px 0 28px 28px;
     }
 
-    .service_prices table td > div + div
+    .service_prices table td:last-child
     {
-        margin-top: 16px;
+        padding-right: 28px;
+    }
+
+
+    .service_prices table td.timing
+    {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .service_prices table td.price
+    {
+        width: 252px;
+        min-width: 252px;
     }
 
 
@@ -895,11 +923,9 @@
     /*------------------
         Service text
     ------------------*/
-    .service_text
+    .service_text .bg
     {
-        width: 900px;
-        max-width: 100%;
-        margin-top: 92px;
+        max-width: calc(100vw - 732px);
     }
 
 
@@ -909,7 +935,7 @@
     ------------*/
     footer
     {
-        padding: 53px 0 102px;
+        padding: 53px 0 80px;
     }
 
 

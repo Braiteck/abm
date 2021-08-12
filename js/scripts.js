@@ -29,48 +29,6 @@ $(() => {
 	}
 
 
-	// Расчет доставки
-	$('.calc_info #width_range').ionRangeSlider({
-		min: 0,
-		max: 10,
-		from: 3.5,
-		step: 0.5,
-		grid: true,
-		prefix: 'Ширина: ',
-		postfix: ' м'
-	})
-
-	$('.calc_info #length_range').ionRangeSlider({
-		min: 0,
-		max: 10,
-		from: 3.5,
-		step: 0.5,
-		grid: true,
-		prefix: 'Длина: ',
-		postfix: ' м'
-	})
-
-	$('.calc_info #height_range').ionRangeSlider({
-		min: 0,
-		max: 10,
-		from: 3.5,
-		step: 0.5,
-		grid: true,
-		prefix: 'Высота: ',
-		postfix: ' м'
-	})
-
-	$('.calc_info #weight_range').ionRangeSlider({
-		min: 0,
-		max: 10,
-		from: 3.5,
-		step: 0.5,
-		grid: true,
-		prefix: 'Масса: ',
-		postfix: ' м'
-	})
-
-
 	// Аккордион
 	$('body').on('click', '.accordion .item .head', function (e) {
 		e.preventDefault()
@@ -352,7 +310,7 @@ const stepsSliderInit = () => {
 				},
 				breakpoints: {
 					0: {
-						slidesPerView: 1
+						slidesPerView: 'auto'
 					},
 					768: {
 						slidesPerView: 2

@@ -43,7 +43,8 @@
     /*--------------
         BG block
     --------------*/
-    .bg_block
+    .bg_block,
+    .bg_block.min_bottom_pad
     {
         padding: 72px 0;
     }
@@ -531,12 +532,6 @@
     /*-------------------
         First section
     -------------------*/
-    .first_section
-    {
-        padding: 212px 0 0;
-    }
-
-
     .first_section .data
     {
         width: 100%;
@@ -554,14 +549,9 @@
     }
 
 
-    .first_section .bg2
+    .first_section .bg
     {
-        position: relative;
-        right: 0;
-
-        width: 90%;
-        margin-top: -72px;
-        margin-left: auto;
+        display: none;
     }
 
 
@@ -619,6 +609,21 @@
     {
         width: 100%;
         margin-top: 16px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .swiper-slide
+    {
+        width: 305px;
+    }
+
+    .steps .item .desc
+    {
+        padding-right: 40px;
     }
 
 
@@ -712,7 +717,6 @@
         max-width: calc(100% + 120px);
         margin-right: -60px;
         margin-left: -60px;
-        padding: 0 60px;
     }
 
 
@@ -723,15 +727,28 @@
 
 
 
+    /*------------------
+        Service text
+    ------------------*/
+    .service_text
+    {
+        padding: 64px 0;
+    }
+
+
+    .service_text .bg
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
-    footer .contacts
+    footer
     {
-        width: 100%;
-        margin-top: 32px;
-
-        justify-content: space-between;
+        padding: 52px 0;
     }
 
 
