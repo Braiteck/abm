@@ -97,6 +97,17 @@ $(window).on('load', () => {
 
 	// Статьи
 	articlesSliderInit()
+
+	// Фикс. шапка
+	headerInit = true,
+		headerHeight = $('header').outerHeight()
+
+	$('header').wrap('<div class="header_wrap"></div>')
+	$('.header_wrap').height(headerHeight)
+
+	headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 
@@ -123,6 +134,31 @@ $(window).resize(() => {
 		// Статьи
 		articlesSliderInit()
 	}
+
+
+	// Фикс. шапка
+	headerInit = false
+	$('.header_wrap').height('auto')
+
+	setTimeout(() => {
+		headerInit = true
+		headerHeight = $('header').outerHeight()
+
+		$('.header_wrap').height(headerHeight)
+
+		headerInit && $(window).scrollTop() > headerHeight
+			? $('header').addClass('fixed')
+			: $('header').removeClass('fixed')
+	}, 100)
+})
+
+
+
+$(window).scroll(() => {
+	// Фикс. шапка
+	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
+		? $('header').addClass('fixed')
+		: $('header').removeClass('fixed')
 })
 
 

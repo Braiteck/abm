@@ -18,6 +18,16 @@ $(() => {
 	// Установка ширины стандартного скроллбара
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
+	// Маска ввода
+	Inputmask.extendDefinitions({
+		'#': {
+			validator: "[0-9\uff11-\uff19]",
+			definitionSymbol: "*"
+		}
+	})
+
+	$('input[type=tel]').inputmask('9#########')
+
 
 	// Мини всплывающие окна
 	$('.mini_modal_btn').click(function (e) {

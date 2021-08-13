@@ -189,7 +189,7 @@
 
     header .phone
     {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -209,6 +209,81 @@
     header.home .contacts + .contacts
     {
         margin-left: 60px;
+    }
+
+
+
+    header.fixed .logo > img
+    {
+        height: 36px;
+    }
+
+    header.fixed .logo > img + img
+    {
+        height: 26px;
+        margin-left: 4px;
+    }
+
+
+    header.fixed .contacts
+    {
+        right: 304px;
+    }
+
+    header.fixed .contacts + .contacts
+    {
+        right: 108px;
+    }
+
+    header.fixed .contacts .email,
+    header.fixed .contacts .phone
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    header.fixed .bottom
+    {
+        padding: 12px 0;
+    }
+
+    header.fixed .bottom .menu,
+    header.fixed .menu
+    {
+        margin-left: 212px;
+    }
+
+    header.fixed .bottom .menu .item + .item,
+    header.fixed .menu .item + .item
+    {
+        margin-left: 4px;
+    }
+
+
+    @-webkit-keyframes moveDown
+    {
+        0%
+        {
+            -webkit-transform: translateY(-72px);
+                    transform: translateY(-72px);
+        }
+    }
+    @-moz-keyframes moveDown
+    {
+        0%
+        {
+            -webkit-transform: translateY(-72px);
+                    transform: translateY(-72px);
+        }
+    }
+    @keyframes moveDown
+    {
+        0%
+        {
+            -webkit-transform: translateY(-72px);
+                    transform: translateY(-72px);
+        }
     }
 
 

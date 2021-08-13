@@ -1099,6 +1099,9 @@ header .qr_code img
 
 header .langs
 {
+    position: relative;
+    top: -1px;
+
     margin-left: 51px;
 }
 
@@ -1273,6 +1276,136 @@ header.home .contacts + .contacts
 
 
 
+header.fixed,
+header.home.fixed
+{
+    position: fixed;
+
+    margin: 0;
+    padding: 0;
+
+    -webkit-animation: moveDown .5s;
+            animation: moveDown .5s;
+
+    background: rgba(255,255,255,.9);
+
+    filter: drop-shadow(0px 6px 40px rgba(10, 46, 83, .1));
+}
+
+header.fixed .cont
+{
+    position: relative;
+}
+
+
+header.fixed .logo
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+
+    margin: auto;
+}
+
+header.fixed .logo > img
+{
+    height: 42px;
+}
+
+header.fixed .logo > img + img
+{
+    height: 35px;
+    margin-left: 13px;
+}
+
+
+header.fixed .contacts
+{
+    position: absolute;
+    top: 50%;
+    right: 352px;
+
+    transform: translateY(-50%);
+}
+
+header.fixed .contacts + .contacts
+{
+    right: 120px;
+
+    display: block;
+}
+
+header.fixed .contacts + .contacts + .contacts
+{
+    display: none;
+}
+
+header.fixed .phone
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+header.fixed .contacts .exp,
+header.fixed .contacts .time
+{
+    display: none;
+}
+
+
+header.fixed .qr_code
+{
+    display: none;
+}
+
+
+header.fixed .bottom
+{
+    margin: 0;
+    padding: 20px 0;
+}
+
+header.fixed .bottom .menu,
+header.fixed .menu
+{
+    margin-left: 272px;
+}
+
+header.fixed .bottom .menu .item + .item,
+header.fixed .menu .item + .item
+{
+    margin-left: 16px;
+}
+
+
+@-webkit-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-88px);
+                transform: translateY(-88px);
+    }
+}
+@-moz-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-88px);
+                transform: translateY(-88px);
+    }
+}
+@keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-88px);
+                transform: translateY(-88px);
+    }
+}
+
+
+
 /*-----------------
     Mob. header
 -----------------*/
@@ -1359,6 +1492,8 @@ header.home .contacts + .contacts
     width: 100%;
     height: 2px;
 
+    transition: background .2s linear;
+
     background: #00afc3;
 }
 
@@ -1375,6 +1510,7 @@ header.home .contacts + .contacts
     height: 100%;
 
     content: '';
+    transition: .2s linear;
 
     background: #00afc3;
 }
@@ -1382,6 +1518,26 @@ header.home .contacts + .contacts
 .mob_header .mob_menu_btn span:after
 {
     top: 9px;
+}
+
+
+.mob_header .mob_menu_btn.active span
+{
+    background: transparent;
+}
+
+.mob_header .mob_menu_btn.active span:before
+{
+    top: 0;
+
+    transform: rotate(45deg);
+}
+
+.mob_header .mob_menu_btn.active span:after
+{
+    top: 0;
+
+    transform: rotate(-45deg);
 }
 
 
